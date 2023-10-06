@@ -1,0 +1,1 @@
+streamlit run "D:\mp_project\mp_project\mdp1.py"
