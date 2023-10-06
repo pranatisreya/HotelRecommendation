@@ -1,13 +1,16 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import joblib
+#import joblib
+import pickle
 import os
 from xgboost import XGBRegressor
 
 # Loading the pre-trained model
-path = os.path.dirname(os.path.abspath(__file__))
-rec = joblib.load(os.path.join(path, 'HRec.pkl'))
+#path = os.path.dirname(os.path.abspath(__file__))
+#rec = joblib.load(os.path.join(path, 'HRec.pkl'))
+
+rec = pickle.load(open('HRec.pkl', 'rb'))
 
 # Streamlit app title
 st.title("Hotel Recommendations")
