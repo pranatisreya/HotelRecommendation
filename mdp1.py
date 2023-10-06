@@ -4,7 +4,7 @@ import pandas as pd
 #import joblib
 import pickle
 import os
-#from xgboost import XGBRegressor
+from xgboost import XGBRegressor
 
 # Loading the pre-trained model
 #path = os.path.dirname(os.path.abspath(__file__))
