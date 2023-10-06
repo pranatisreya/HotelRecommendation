@@ -149,7 +149,7 @@ if st.button("Predict"):
     ip = np.array([[Banglore, Chennai, Delhi, Hyderabad, Kolkata, Mumbai, ra, d, re, s, p, t]],dtype=object)
     predicted_Hrec = rec.predict(ip)[0]
 
-    df = pd.read_csv('D:\mp_project\mp_project\static\hotel_data.csv')
+    df = pd.read_csv('/static/hotel_data.csv')
     predicted_Hrec1 = df.loc[int(predicted_Hrec)]
     c = ['Hotel Name', 'Rating', 'Rating Description', 'Reviews', 'Star Rating', 'Location', 'Price', 'Tax']
     data1 = [{'column': column, 'value': predicted_Hrec1[column]} for column in c]
