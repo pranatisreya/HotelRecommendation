@@ -161,4 +161,4 @@ if st.button("Predict"):
             st.write(f"{item['column']}: {item['value']}")
 
 # Display an image
-st.image("iages/image.jpg", caption="Image", use_column_width=True)
+st.image("images/image.jpg", caption="Image", use_column_width=True)
